@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: url(assets/lights.jpg) fixed;
+    background-size: cover;
+    color: antiquewhite;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+}
+.aboutme img {
+    width: 80%;
+    border-radius: 50%;
+    padding: 10%;
+}
+
+.aboutme .image {
+    flex: 1;
+}
+
+.aboutme .description {
+    flex: 2;
+}
+
+.hobbys ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hobbys ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.hobbys ul li i {
+   border: 2px solid black;
+   border-radius: 50%;
+   padding: 10px;
+   height: 32px;
+}
+
+.hobbys h2 {
+    text-align: center;
+}
+
+hr {
+    background: linear-gradient(
+        to right,
+        black 0%,
+        orange 50%,
+        red 100%
+    );
+    height: 1px;
+}
+
+.project {
+    display: flex;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-description {
+    flex: 1;
+}
+
+main {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project-description p {
+    text-align: justify;
+}
+
+.view {
+    position: relative;
+    width: 500px;
+    height: 750px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.mask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 94, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.mask:hover {
+    opacity: 1;
+}
+
+.view.view-two {
+    height: 562px
+}
+
+.mask.mask-two {
+    height: 563px;
+    background-color: rgba(0, 174, 255, 0.5);
+}
+
+.mask.mask-two p{
+    transform: scale(0);
+}
+
+.mask.mask-two:hover p {
+    transform: scale(1.2);
+    transition-delay: 0.3s;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
